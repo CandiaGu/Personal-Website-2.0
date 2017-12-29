@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CG</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<!--font-->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+	<!-- javascript -->
+	<script type="text/javascript" src="{{ url_for('static', filename = 'js/parallax.js') }}"></script>
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- custom stylesheet -->
+	<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
+</head>
+
+<body>
+	<!-- Fixed -->
+	<div>
+		<a id="about">about</a>
+	</div>
+
+	<!-- Cover -->
+	<div  id="cover" class = " container-fluid fullscrn">
+
+		<div class="layer layer-01" data-type="parallax" data-depth="0.10">
+			<div class="offcenter">
+				<h2>hello, i'm</h2>
+				<h1>Candia Gu.</h1>
+				<h3>computer engineering student @ carnegie mellon</h3>
+			</div>
+		</div>
+		<div class="layer layer-02" data-type="parallax" data-depth="0.20"></div>
+		<div class="layer layer-03" data-type="parallax" data-depth="0.50"></div>
+		<div class="layer layer-04" data-type="parallax" data-depth="0.80"></div>
+		<div class="layer layer-05" data-type="parallax" data-depth="1.00"></div>
+	</div>
+	<!-- Content -->
+	<div class = "content">
+
+		<!-- About -->
+		<div class = "container-fluid partscrn" id="aboutPG">
+			<div class="row text" ></div>
+			<div class="row">
+				
+				<div class = "col-8 nopadding" >
+					<div class = "row" style="overflow:hidden;" id="aboutPG">
+						<div class = "col-5 center nopadding">
+							<img style = "width:100%;height:75vh%;" src="{{ url_for('static', filename ='img/profile.jpg') }}" alt = "profile">
+						</div>
+						
+						<div class = "col-7"  >
+							
+							<h1 style="font-weight: bold; text-decoration: underline;">A little about me</h1>
+							<p style="margin-top: 10vh;">
+							I’m an electrical and computer engineering student at Carnegie Mellon University in Pittsburgh, Pennsylvania.
+							Although I do love engineering, I’ve done art since I was kid, if you count the scribbly mess that were my works.
+							And now, I combine both art and engineering to make cool stuff…or something like that. Please enjoy my pieces as much as I did making them. :D
+							</p>
+							<p style="position: bottom; "></p>
+							
+						</div>
+					</div>	
+				</div>
+				<div class = "col-4"></div>
+			</div>
+		</div>
+
+
+		<!-- Projects -->
+		<div class="container-fluid relative" id= "projectsPG" style="background-color: grey; margin-top: 10vh;">
+			<img style="position:absolute;width:100vw;opacity:0.3;" src="{{ url_for('static', filename ='img/Bell.png') }}" alt = "profile">
+			<div class = "row">
+				<div class = "col-4"></div>
+				<div class = "col-4 projtitle">
+					<h1>Projects</h1>
+				</div>
+				<div class = "col-4 allproj">
+					<a href="#">see all projects > </a>
+				</div>
+			</div>
+			<div >
+				<div class="row grayback">
+					<div class="col-2">
+					</div>
+					<div class="text col-5 full imgcenter">
+						<img src="{{ url_for('static', filename ='img/logosm.png') }}" alt="logo">
+					</div>
+					<div class="text col-5 full">
+						<p>
+						Sed mi, sunt. Lupidelendit et quiatur?
+						Porrum hil id quo est doloreium sam es provid ea volorerchic tempossum, natint ut officaeceped quo idi istia simi, volut optatur? Et optatus, sequi beatquis dus.
+						Ucit aborerc hicitionsed et ut volut ant, nam, te es excepta dus.
+						Recatia pos intium aliquiae sae cus voloresenis maximi, nis mi, ut et, sequodiaepro doloratet as rem quam susam eos incidistint fugia dolorit is maio. Lo berum aut ulpa cum ex ex ea nonse nimaxim rate vent ex eatusam suntios as con nis alia et quo consece atquid ut utecae non pra qui totate nonse omnihicius, omnimod et exceste cescium dolestin peritae venim doloren disque
+						</p>
+					</div>
+				
+				</div>
+				<div class="row">
+					<div class="col-7"></div>
+					<div class="col-5">
+						<a class="more-info">see how it was done > </a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-2">
+				</div>
+				<div class="text col-5 full imgcenter">
+					<img src="{{ url_for('static', filename ='img/logosm.png') }}" alt="logo">
+				</div>
+				<div class="text col-5 full">
+					<p>
+					Sed mi, sunt. Lupidelendit et quiatur?
+					Porrum hil id quo est doloreium sam es provid ea volorerchic tempossum, natint ut officaeceped quo idi istia simi, volut optatur? Et optatus, sequi beatquis dus.
+					Ucit aborerc hicitionsed et ut volut ant, nam, te es excepta dus.
+					Recatia pos intium aliquiae sae cus voloresenis maximi, nis mi, ut et, sequodiaepro doloratet as rem quam susam eos incidistint fugia dolorit is maio. Lo berum aut ulpa cum ex ex ea nonse nimaxim rate vent ex eatusam suntios as con nis alia et quo consece atquid ut utecae non pra qui totate nonse omnihicius, omnimod et exceste cescium dolestin peritae venim doloren disque
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-7"></div>
+				<div class="col-5">
+					<h3 class="more-info">see how it was done > </h3>
+				</div>
+			</div>
+			<div class = "grayback">
+				<div class="row">
+					<div class="col-2">
+					</div>
+					<div class="text col-5 full imgcenter">
+						<img src="{{ url_for('static', filename ='img/logosm.png') }}" alt="logo">
+					</div>
+					<div class="text col-5 full">
+						<p>
+						Sed mi, sunt. Lupidelendit et quiatur?
+						Porrum hil id quo est doloreium sam es provid ea volorerchic tempossum, natint ut officaeceped quo idi istia simi, volut optatur? Et optatus, sequi beatquis dus.
+						Ucit aborerc hicitionsed et ut volut ant, nam, te es excepta dus.
+						Recatia pos intium aliquiae sae cus voloresenis maximi, nis mi, ut et, sequodiaepro doloratet as rem quam susam eos incidistint fugia dolorit is maio. Lo berum aut ulpa cum ex ex ea nonse nimaxim rate vent ex eatusam suntios as con nis alia et quo consece atquid ut utecae non pra qui totate nonse omnihicius, omnimod et exceste cescium dolestin peritae venim doloren disque
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-7"></div>
+					<div class="col-5">
+						<h3 class="more-info">see how it was done > </h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Portfolio -->
+		<div class="container-fluid fullscrn" style="overflow: hidden">
+			<div class = "row text">
+				<div class = "col-10">
+					<h1>Portfolio</h1>
+				</div>
+			</div>
+			<div class = "row text" style="padding-top: 0;">
+				<div class = "col-2">
+					<a href="#">see all works > </a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 ">
+			<div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active imgcenter">
+			      <img  src="{{ url_for('static', filename ='img/logosm.png') }}"  alt="First slide">
+			    </div>
+			    <div class="carousel-item imgcenter">
+			      <img  src="{{ url_for('static', filename ='img/logosm.png') }}" alt="Second slide">
+			    </div>
+			    <div class="carousel-item imgcenter">
+			      <img  src="{{ url_for('static', filename ='img/logosm.png') }}" alt="Third slide">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			  </a>
+			  </div>
+			</div>
+			</div>
+		</div>
+
+
+		<!-- Footer -->
+		<div>
+			<div class="container-fluid page-footer" >
+				<div class = 'row'>
+					<div class = "col-sm-8"></div>
+					<div class = "col-sm-1"><a href="https://github.com/CandiaGu">github</a></div>
+					<div class = "col-sm-1"><a href="https://www.linkedin.com/in/candia-gu-3a5b88b9?trk=nav_responsive_tab_profile">linkedin</a></div>
+					<div class = "col-sm-2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

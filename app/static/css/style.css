@@ -1,0 +1,191 @@
+/* Default Tags -------------------------------------*/
+*{
+	font-family: 'Raleway';
+	border: 2px solid red;
+
+}
+h2, h3, p{
+	font-family: 'Raleway';
+
+}
+h1{
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	font-size: 2em;
+}
+h3{
+	font-size: 1.2em;
+}
+p{
+	font-size: 1em;
+}
+
+a{
+
+	color: lightgrey;
+}
+
+/* Cover ----------------------------------------------*/
+#cover {
+	overflow: hidden;
+	position: relative;
+}
+.layer {
+
+	background-position: bottom;
+	background-size: 95% 100%;
+	background-repeat: no-repeat;
+	width: 95%;
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+
+}
+.layer-01 {
+   background-image: url('../img/L5.png');
+}
+	.layer-01 .offcenter {
+		display:table-cell;
+		vertical-align:middle;
+		text-align:center;
+		overflow: hidden;
+		height:70vh;
+		width:100%;
+		color:grey;
+	}
+	.layer-01 h2{
+		opacity: 0.7;
+	}
+	.layer-01 p{
+		opacity: 0.7;
+	}
+	.layer-01 h1{
+		margin-left: 20vw;
+		margin-right: 20vw;
+		font-weight: normal;
+		font-size:20vh;
+		border-bottom: 2px solid currentColor;
+		color:dimgrey;
+	}
+.layer-02 {
+   background-image: url('../img/L4.png');
+}
+
+.layer-03 {
+   background-image: url('../img/L3.png');
+}
+.layer-04 {
+   background-image: url('../img/L2.png');
+}
+.layer-05 {
+   background-image: url('../img/L1.png');
+}
+
+/* Content ------------------------------------------------ */
+.row{
+	margin-left: 0;
+	margin-right: 0;
+	padding:0;
+}
+.container-fluid{
+	margin-right:0;
+	margin-left:0;
+}
+.content{
+	background-color: white;
+}
+	.content #projectsPG h1{
+		color:white;
+		font-size: 2.5em;
+	}
+
+	.projtitle{
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+		text-align: center;
+	}
+
+	.allproj{
+		padding-top:5vh;
+		display:table-cell;
+		vertical-align:middle;
+	}
+
+.center{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	overflow: hidden;
+	height:100%;
+	width:100%;
+}
+.more-info{
+	font-size: 1.0em;
+}
+
+/* About Page */
+
+.grayback{
+	background-color:#e8e8e8;
+}
+
+
+
+.text{
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-bottom: 5vh;
+	padding-top: 5vh;
+
+}
+.fullscrn{
+
+	height:95vh;
+	width:95vw;
+
+}
+.partscrn{
+	height:75vh;
+	width: auto;
+	overflow: hidden;
+}
+.full{
+	height:100%;
+	margin:auto;	
+}
+.relative{
+	position:relative;
+}
+.header {
+	position:fixed;
+}
+.imgcenter {
+
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	overflow: hidden;
+	height:50vh;
+	width:auto;
+}
+#about{
+	width:50px;
+	position:fixed;
+	left:1vw;
+	top:50vh;
+	text-align: center;
+	z-index: 6;
+	border-radius:5px;
+	background-color:white;
+	color:black;
+
+
+}
+#about:hover{
+	position:fixed;
+	background-color:gray;
+	color:white;
+	border-color:black;
+
+}
+
