@@ -1,41 +1,46 @@
 /* Default Tags -------------------------------------*/
 *{
 	font-family: 'Raleway';
-	border: 2px solid red;
+	/*border: 2px solid red;*/
 
 }
-h2, h3, p{
+h1, h2, h3, p{
 	font-family: 'Raleway';
 
 }
 h1{
-	font-family: 'Playfair Display';
-	font-weight: bold;
+	font-weight: bold;*/
 	font-size: 2em;
 }
 h3{
 	font-size: 1.2em;
 }
 p{
+	font-weight: bold;
 	font-size: 1em;
 }
 
 a{
-
-	color: lightgrey;
+	color:grey;
+}
+#projectsPG img{
+	opacity: 0.8;
+	/*filter: grayscale(100%);*/
 }
 
 /* Cover ----------------------------------------------*/
 #cover {
 	overflow: hidden;
 	position: relative;
+	height:95vh;
+	width:100vw;
 }
 .layer {
 
 	background-position: bottom;
-	background-size: 95% 100%;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	width: 95%;
+	width: 100%;
 	height: 100%;
 	position: fixed;
 	z-index: -1;
@@ -50,7 +55,7 @@ a{
 		text-align:center;
 		overflow: hidden;
 		height:70vh;
-		width:100%;
+		width:100vw;
 		color:grey;
 	}
 	.layer-01 h2{
@@ -60,6 +65,7 @@ a{
 		opacity: 0.7;
 	}
 	.layer-01 h1{
+		font-family: 'Playfair Display';
 		margin-left: 20vw;
 		margin-right: 20vw;
 		font-weight: normal;
@@ -82,8 +88,15 @@ a{
 }
 
 /* Content ------------------------------------------------ */
+
+.reframe {
+  height: 30vh;
+  width: 30vh;
+  overflow: hidden;
+}
+
 .row{
-	margin-left: 0;
+	margin-left: -15px;
 	margin-right: 0;
 	padding:0;
 }
@@ -94,9 +107,12 @@ a{
 .content{
 	background-color: white;
 }
-	.content #projectsPG h1{
-		color:white;
-		font-size: 2.5em;
+	#projectsPG{
+		/*background-color: lightgrey;*/
+		margin-top: 10vh;
+		background-image: url('../img/Bell.png');
+		
+
 	}
 
 	.projtitle{
@@ -105,10 +121,14 @@ a{
 		text-align: center;
 	}
 
+	#projectsPG img{
+
+	}
+
 	.allproj{
-		padding-top:5vh;
-		display:table-cell;
-		vertical-align:middle;
+		display: table-cell;
+		padding-top:10vh;
+		vertical-align:bottom;
 	}
 
 .center{
@@ -121,12 +141,16 @@ a{
 }
 .more-info{
 	font-size: 1.0em;
+	margin-bottom: 10vh;
+	color: dimgrey;
 }
 
 /* About Page */
 
 .grayback{
-	background-color:#e8e8e8;
+	/*background-color:#e8e8e8;*/
+	margin-left: -15px;
+	margin-right: -15px;
 }
 
 
@@ -140,14 +164,21 @@ a{
 }
 .fullscrn{
 
-	height:95vh;
-	width:95vw;
+	height:100vh;
+	width:100vw;
 
 }
 .partscrn{
 	height:75vh;
 	width: auto;
 	overflow: hidden;
+}
+.smlscrn{
+	height:60vh;
+	width:auto;
+	overflow: hidden;
+	margin-left:-15px;
+	margin-right:-15px;
 }
 .full{
 	height:100%;
@@ -188,4 +219,17 @@ a{
 	border-color:black;
 
 }
+
+.carousel-item img{
+	margin:0 auto;
+	height: 75vh;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: url('../img/logosm.png');
+}
+
 
