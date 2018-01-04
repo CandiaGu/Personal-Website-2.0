@@ -1,7 +1,8 @@
+Flask==0.12.2
+Werkzeug<0.13.0,>=0.12.0
 beautifulsoup4==4.4.1
 chardet==2.3.0
 decorator==4.0.6
-gyp==0.1
 html5lib==0.999
 ipython==2.4.1
 lxml==3.5.0

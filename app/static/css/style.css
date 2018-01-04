@@ -14,15 +14,34 @@ h1{
 }
 h3{
 	font-size: 1.2em;
+	font-weight: bold;
 }
 p{
-	font-weight: bold;
+
 	font-size: 1em;
 }
-
-a{
-	color:grey;
+a{ 
+	color:gray;
 }
+
+#navbar a{
+	color:gray;
+	width:50px;
+	text-decoration: none;
+    border-bottom: 2px solid transparent;    
+    width: 0px;
+    transition: 0.5s ;
+    /*white-space: nowrap;*/
+    height: 23px;  
+}
+
+#navbar a:hover{
+	color:black;
+	text-decoration:none;
+    border-bottom: 2px solid black; 
+    width: 50px;
+}
+
 #projectsPG img{
 	opacity: 0.8;
 	/*filter: grayscale(100%);*/
@@ -69,9 +88,12 @@ a{
 		margin-left: 20vw;
 		margin-right: 20vw;
 		font-weight: normal;
-		font-size:20vh;
+		font-size:17vh;
 		border-bottom: 2px solid currentColor;
 		color:dimgrey;
+	}
+	.layer-01 h3{
+		font-size:1.5em ;
 	}
 .layer-02 {
    background-image: url('../img/L4.png');
@@ -173,6 +195,9 @@ a{
 	width: auto;
 	overflow: hidden;
 }
+.container-fluid{
+	margin-top: 30vh;
+}
 .smlscrn{
 	height:60vh;
 	width:auto;
@@ -224,12 +249,20 @@ a{
 	margin:0 auto;
 	height: 75vh;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  background-size: 100%, 100%;
-  background-image: url('../img/logosm.png');
+.carousel-control-prev-icon{
+	height: 100px;
+	width: 100px;
+	background-size: 100%, 100%;
+	background-image: url('../img/arrow-left.png');
 }
-
+.carousel-control-next-icon {
+	height: 100px;
+	width: 100px;
+	background-size: 100%, 100%;
+	background-image: url('../img/arrow-right.png');
+}
+ #navbar{
+ 	padding-top: 5vh;
+ 	text-align: center;
+ }
 
