@@ -17,9 +17,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- custom stylesheet -->
 	<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 
 <body>
+
 	<!-- Fixed -->
 	<!--div>
 		<a id="about">about</a>
@@ -32,7 +34,7 @@
 			<div class="offcenter">
 				<h2>hello, i'm</h2>
 				<h1>Candia Gu.</h1>
-				<h3>computer engineering student @ carnegie mellon</h3>
+				<h3>design-oriented software engineer</h3>
 			</div>
 		</div>
 		<div class="layer layer-02" data-type="parallax" data-depth="0.20"></div>
@@ -42,7 +44,14 @@
 	</div>
 	<!-- Content -->
 	<div class = "content">
-
+		<!-- Navbar -->
+		<div class = "container" id="navbar">
+			<div class = "row">
+				<div class = "col-sm-4 underline"><a href = "#">about</a></div>
+				<div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">projects</a></div>
+				<div class = "col-sm-4 underline"><a href = "#">art + design</a></div>
+			</div>
+		</div>
 		<!-- About -->
 		<div class = "container-fluid partscrn" id="aboutPG">
 			<div class="row text" ></div>
@@ -56,13 +65,18 @@
 						
 						<div class = "col-7"  >
 							
-							<h2 style="font-weight: bold; border-bottom: 2px solid currentColor;">a little about me  </h2>
+							<h2 style="font-weight: bold; border-bottom: 2px solid currentColor;">about me </h2>
 							<p style="margin-top: 10vh;">
-							I’m an electrical and computer engineering student at Carnegie Mellon University in Pittsburgh, Pennsylvania.
+							I’m currently a second-year electrical and computer engineering student at <b>Carnegie Mellon University</b> in Pittsburgh, Pennsylvania.
 							Although I do love engineering, I’ve done art since I was kid, if you count the scribbly mess that were my works.
 							And now, I combine both art and engineering to make cool stuff…or something like that. Please enjoy my pieces as much as I did making them. :D
 							</p>
-							<p style="position: bottom; "></p>
+							<p>
+							-
+							</p>
+							<p>
+							Candia.D.Gu@gmail.com
+							</p>
 							
 						</div>
 					</div>	
@@ -71,7 +85,48 @@
 			</div>
 		</div>
 
-
+		<div class="container-fluid smlscrn"  id="skills">
+			<div class = "row">
+				
+				<div class = "col-4" style="text-align:right; border-bottom: 2px solid currentColor;">
+					<h1>skills</h1>
+				</div>
+				<div class = "col-2"></div>
+				<div class = "col-2">
+					<h3>languages</h3>
+					<ul style="list-style-type:none">
+					  <li>Java</li>
+					  <li>Python</li>
+					  <li>C</li>
+					  <li>HTML5</li>
+					  <li>CSS</li>
+					  <li>Javascript</li>
+					</ul> 
+				</div>
+				<div class = "col-2">
+					<h3>tools</h3>
+					<ul style="list-style-type:none">
+					  <li>Git / Github</li>
+					  <li>Bash</li>
+					  <li>Android Studio</li>
+					  <li>MongoDB</li>
+					  <li>MatLab</li>
+					  <li>AutoCAD</li>
+					</ul> 
+					
+				</div>
+				<div class = "col-2">
+					<h3>design</h3>
+					<ul style="list-style-type:none">
+					  <li>InDesign</li>
+					  <li>Typography</li>
+					  <li>Photoshop</li>
+					  <li>Illustrator</li>
+					  <li>PaintTool SAI</li>
+					</ul> 
+				</div>
+			</div>
+		</div>
 		<!-- Projects -->
 		<div class="container-fluid relative nopadding" id= "projectsPG">
 
@@ -137,7 +192,7 @@
 			</div>
 			<div class="row smlscrn" style="background-color: rgba(255,255,255,0.8);">
 				<div class="col-7" style="overflow:hidden;padding-right:0px; padding-left:0px;padding-top: 0vh;">
-					<img style="width:auto;height: 100%;" src="{{ url_for('static', filename ='img/logosm.png') }}" alt="logo">
+					<img style="width:100%;height: 100%;" src="{{ url_for('static', filename ='img/holopicto.jpg') }}" alt="logo">
 				</div>
 				<div class="text col-5 full">
 					<div class="row">
