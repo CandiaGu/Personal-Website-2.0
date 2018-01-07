@@ -5,7 +5,7 @@
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<!--font-->
@@ -13,11 +13,15 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display">
 	<!-- javascript -->
 	<script type="text/javascript" src="{{ url_for('static', filename = 'js/parallax.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename = 'js/script.js')}}"></script>
 	<!-- bootstrap css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- custom stylesheet -->
 	<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
 	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
@@ -47,9 +51,9 @@
 		<!-- Navbar -->
 		<div class = "container" id="navbar">
 			<div class = "row">
-				<div class = "col-sm-4 underline"><a href = "#">about</a></div>
-				<div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">projects</a></div>
-				<div class = "col-sm-4 underline"><a href = "#">art + design</a></div>
+				<div class = "col-sm-4 underline"><a href = "#aboutPG">about</a></div>
+				<div class = "col-sm-4 underline"><a href = "#projectsPG">projects</a></div>
+				<div class = "col-sm-4 underline"><a href = "#portfolioPG">art + design</a></div>
 			</div>
 		</div>
 		<!-- About -->
@@ -136,35 +140,34 @@
 					<h1 style="border-bottom: 2px solid currentColor;">Featured Projects</h1>
 				</div>
 				<div class = "col-4 allproj">
-					<a href="#">see all projects > </a>
+					<a href="{{ url_for('projects') }}">see all projects > </a>
 				</div>
 			</div>
 			<div class="row smlscrn" style="background-color: rgba(255,255,255,0.8);">
 				<div class="col-7" style="overflow:hidden;padding-right:0px; padding-left:0px;padding-top: 0vh;">
 					<img style="width:100%;height: 100%;" src="{{ url_for('static', filename ='img/xometry.jpg') }}" alt="logo">
 				</div>
-				<div class="text col-5 full">
+				<div class="text col-4 full">
 					<div class="row">
-					<h3> Internship at Xometry </h3>
-					<p>
-					Implemented deep learning to create clusters of CAD models based
-					on shape distribution and thumbnail images, generated using data
-					retrieved from MongoDB.
-					</p>
-					<p>
-					Created a web crawler to update prices of blank parts in server database
-					using data from mainstream material suppliers.
-					</p>
-					
+						<h3> Internship at Xometry </h3>
+						<p>
+						Implemented deep learning to create clusters of CAD models based
+						on shape distribution and thumbnail images, generated using data
+						retrieved from MongoDB.
+						</p>
+						<p>
+						Created a web crawler to update prices of blank parts in server database
+						using data from mainstream material suppliers.
+						</p>
+						
 					</div>
-					<div class="row">
-						<div class="col-4"></div>
-						<div class="col-8 more-info">
-							<a>see how it was done > </a>
-					</div>
-			</div>
-
 				</div>
+				<div class="col-1 full" style="display: table;" >
+					<div style="display:table-cell;vertical-align: middle; text-align: center;">
+						<i class="material-icons">keyboard_arrow_right</i>
+					</div>
+				</div>
+
 			</div>
 			
 
@@ -212,7 +215,7 @@
 			</div>
 		</div>
 		<!-- Portfolio -->
-		<div class="container-fluid fullscrn" style="overflow: hidden">
+		<div class="container-fluid fullscrn" style="overflow: hidden" id="portfolioPG">
 			<div class = "row">
 				<div class = "col-4"></div>
 				<div class = "col-4 projtitle">

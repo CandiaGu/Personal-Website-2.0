@@ -123,6 +123,7 @@ a{
 	padding:0;
 }
 .container-fluid{
+	margin-top: 30vh;
 	margin-right:0;
 	margin-left:0;
 }
@@ -132,8 +133,8 @@ a{
 	#projectsPG{
 		/*background-color: lightgrey;*/
 		margin-top: 10vh;
-		background-image: url('../img/Bell.png');
-		
+		background-image: url('../img/flowers.png');
+		background-size:cover;		
 
 	}
 
@@ -195,9 +196,7 @@ a{
 	width: auto;
 	overflow: hidden;
 }
-.container-fluid{
-	margin-top: 30vh;
-}
+
 .smlscrn{
 	height:60vh;
 	width:auto;
