@@ -1,39 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>CG</title>
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<!--font-->
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display">
-	<!-- javascript -->
-	<script type="text/javascript" src="{{ url_for('static', filename = 'js/parallax.js') }}"></script>
-	<script type="text/javascript" src="{{ url_for('static', filename = 'js/script.js')}}"></script>
-	<!-- bootstrap css -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<!-- custom stylesheet -->
-	<link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
-	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-</head>
-
-<body>
-
-	<!-- Fixed -->
-	<!--div>
-		<a id="about">about</a>
-	</div-->
-
+{% extends "base.html" %}
+	{% block cover %}
 	<!-- Cover -->
 	<div  id="cover" class = "fullscrn">
-
+	
 		<div class="layer layer-01" data-type="parallax" data-depth="0.10">
 			<div class="offcenter">
 				<h2>hello, i'm</h2>
@@ -45,17 +14,13 @@
 		<div class="layer layer-03" data-type="parallax" data-depth="0.50"></div>
 		<div class="layer layer-04" data-type="parallax" data-depth="0.80"></div>
 		<div class="layer layer-05" data-type="parallax" data-depth="1.00"></div>
+	
 	</div>
+	{% endblock %}
+	{% block body %}
 	<!-- Content -->
-	<div class = "content">
-		<!-- Navbar -->
-		<div class = "container" id="navbar">
-			<div class = "row">
-				<div class = "col-sm-4 underline"><a href = "#aboutPG">about</a></div>
-				<div class = "col-sm-4 underline"><a href = "#projectsPG">projects</a></div>
-				<div class = "col-sm-4 underline"><a href = "#portfolioPG">art + design</a></div>
-			</div>
-		</div>
+	
+		
 		<!-- About -->
 		<div class = "container-fluid partscrn" id="aboutPG">
 			<div class="row text" ></div>
@@ -71,7 +36,8 @@
 							
 							<h2 style="font-weight: bold; border-bottom: 2px solid currentColor;">about me </h2>
 							<p style="margin-top: 10vh;">
-							I’m currently a second-year electrical and computer engineering student at <b>Carnegie Mellon University</b> in Pittsburgh, Pennsylvania.
+							I’m currently a second-year electrical and computer engineering student minoring
+							in Human Computer Interaction at <b>Carnegie Mellon University</b> in Pittsburgh, Pennsylvania.
 							Although I do love engineering, I’ve done art since I was kid, if you count the scribbly mess that were my works.
 							And now, I combine both art and engineering to make cool stuff…or something like that. Please enjoy my pieces as much as I did making them. :D
 							</p>
@@ -135,11 +101,11 @@
 		<div class="container-fluid relative nopadding" id= "projectsPG">
 
 			<div class = "row">
-				<div class = "col-4"></div>
-				<div class = "col-4 projtitle">
+				<div class = "col-7"></div>
+				<div class = "col-4">
 					<h1 style="border-bottom: 2px solid currentColor;">Featured Projects</h1>
 				</div>
-				<div class = "col-4 allproj">
+				<div class = "col-1 allproj">
 					<a href="{{ url_for('projects') }}">see all projects > </a>
 				</div>
 			</div>
@@ -164,7 +130,7 @@
 				</div>
 				<div class="col-1 full" style="display: table;" >
 					<div style="display:table-cell;vertical-align: middle; text-align: center;">
-						<i class="material-icons">keyboard_arrow_right</i>
+						<a href="#"><i class="material-icons">keyboard_arrow_right</i></a>
 					</div>
 				</div>
 
@@ -175,42 +141,37 @@
 				<div class="col-7" style="overflow:hidden;padding-right:0px; padding-left:0px;padding-top: 0vh;">
 					<img style="width:100%;height: 100%;" src="{{ url_for('static', filename ='img/website.png') }}" alt="logo">
 				</div>
-				<div class="text col-5 full">
+				<div class="text col-4 full">
 					<div class="row">
 					<h3> This Website! </h3>
 					<p>
-					As you've just experienced, this website was designed to showcase my web design
-					and art skills. I wanted to make it aesthetic, so I learned to use parallax to 
-					make it feel more interactive and immersive.
+					As you've just experienced, this website was designed using parallax to 
+					make the experience feel more interactive and immersive.
 					</p>
 					</div>
-					<div class="row">
-						<div class="col-4"></div>
-						<div class="col-8 more-info">
-							<a>see how it was done > </a>
-						</div>
+				</div>
+				<div class="col-1 full" style="display: table;" >
+					<div style="display:table-cell;vertical-align: middle; text-align: center;">
+						<a href="#"><i class="material-icons">keyboard_arrow_right</i></a>
 					</div>
-
 				</div>
 			</div>
 			<div class="row smlscrn" style="background-color: rgba(255,255,255,0.8);">
 				<div class="col-7" style="overflow:hidden;padding-right:0px; padding-left:0px;padding-top: 0vh;">
 					<img style="width:100%;height: 100%;" src="{{ url_for('static', filename ='img/holopicto.jpg') }}" alt="logo">
 				</div>
-				<div class="text col-5 full">
+				<div class="text col-4 full">
 					<div class="row">
-					<h3>Build18 2018</h3>
-					<p>
-					Currently in progress, my team and I are developing and designing a device that displays holograms of what the user has drawn in 3-dimensional space. It's going to be lit.
-					</p>
+						<h3>Build18 2018</h3>
+						<p>
+						Currently in progress, my team and I are developing and designing a device that displays holograms of what the user has drawn in 3-dimensional space. It's going to be lit.
+						</p>
 					</div>
-					<div class="row">
-						<div class="col-4"></div>
-						<div class="col-8 more-info">
-							<a>see how it was done > </a>
-						</div>
+				</div>
+				<div class="col-1 full" style="display: table;" >
+					<div style="display:table-cell;vertical-align: middle; text-align: center;">
+						<a href="#"><i class="material-icons">keyboard_arrow_right</i></a>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -222,7 +183,7 @@
 					<h1 style="border-bottom: 2px solid currentColor;">Portfolio</h1>
 				</div>
 				<div class = "col-4 allproj">
-					<a href="#">see all works > </a>
+					<a href="/portfolio">see all works > </a>
 				</div>
 			</div>
 				<div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
@@ -251,19 +212,5 @@
 		</div>
 
 
-		<!-- Footer -->
-		<div>
-			<div class="container-fluid page-footer" >
-				<div class = 'row'>
-					<div class = "col-sm-8"></div>
-					<div class = "col-sm-1"><a href="https://github.com/CandiaGu">github</a></div>
-					<div class = "col-sm-1"><a href="https://www.linkedin.com/in/candia-gu-3a5b88b9?trk=nav_responsive_tab_profile">linkedin</a></div>
-					<div class = "col-sm-2"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-</body>
-</html>
+		
+	{% endblock %}

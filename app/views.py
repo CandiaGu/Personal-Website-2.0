@@ -12,4 +12,8 @@ def index():
 def projects():
 	return render_template("projects.html")
 
+@app.route('/portfolio')
+def portfolio():
+	return render_template("portfolio.html")
+
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CG</title>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <!--font-->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+  <!-- javascript -->
+  <script type="text/javascript" src="{{ url_for('static', filename = 'js/parallax.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename = 'js/script.js')}}"></script>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+  {% block cover %}{% endblock %}
+  <div class = "content">
+<!-- Navbar -->
+  <div class = "container" id="navbar">
+    <div class = "row">
+      <div class = "col-sm-4 underline"><a href = "/">home</a></div>
+      <div class = "col-sm-4 underline"><a href = "/projects">projects</a></div>
+      <div class = "col-sm-4 underline"><a href = "/portfolio">art + design</a></div>
+    </div>
+  </div>
+  {% block body %}{% endblock %}
+<!-- Footer -->
+  <div>
+    <div class="container-fluid page-footer" >
+      <div class = 'row'>
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-4" style = "margin-bottom: 2vh;">
+        <p>developed and designed by Candia    <i class="material-icons md-18">mood</i></p> </div>
+        <div class = "col-sm-4"></div>
+        <div class = "col-sm-1"><a href="https://github.com/CandiaGu">github</a></div>
+        <div class = "col-sm-1"><a href="https://www.linkedin.com/in/candia-gu-3a5b88b9?trk=nav_responsive_tab_profile">linkedin</a></div>
+        <div class = "col-sm-1"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
