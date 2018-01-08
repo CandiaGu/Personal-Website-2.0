@@ -30,9 +30,9 @@
 <!-- Navbar -->
   <div class = "container" id="navbar">
     <div class = "row">
-      <div class = "col-sm-4 underline"><a href = "/">home</a></div>
-      <div class = "col-sm-4 underline"><a href = "/projects">projects</a></div>
-      <div class = "col-sm-4 underline"><a href = "/portfolio">art + design</a></div>
+      <div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">home</a></div>
+      <div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">projects</a></div>
+      <div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">art + design</a></div>
     </div>
   </div>
   {% block body %}{% endblock %}
