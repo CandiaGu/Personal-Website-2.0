@@ -1,76 +1,259 @@
 {% extends "base.html" %}
 {% block cover %}
-<div class="container" style = "height: 20vh; display: table;">
-  	<h1 style = "text-align: center;display: table-cell; vertical-align: middle;">Projects</h1>
-</div>
+
 {% endblock %}
 {% block body %}
+<div class="container" style = "height: 20vh; display: table;">
+  	<h1 style = "text-align: center;display: table-cell; vertical-align: middle; 
+  	border-bottom: 2px solid;">Projects</h1>
+</div>
 <div class="container-fluid" style = "margin-top:5vh;">
 	<div class="row">
 		<div id="projdesc" class="col-5" style = "height:100%; position:sticky;position: -webkit-sticky; top: 10vh; background-color: #437dd3; color: #ffffff; margin-top: 10px;">
-			Project Description
+			<div class="mySlides">
+				<div class="row"><h3>Personal Website V2</h3></div>
+				<div class="row"><h4>Winter 2018</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+		                <p>This lightweight website we’re currently on, was made from scratch 
+		                mostly using raw HTML, CSS, and Javascript, sprinkled with some jQuery 
+		                for the animations and Bootstrap for the ease of formatting. I personally 
+		                designed and developed this website to practice and learn web development 
+		                as well as UI/UX design.</p>
+		                <p>Some other tools I learned to use through this were Flask, 
+		                a python microframework, which I used for general templating (i.e. headers and footers) 
+		                throughout the site as well as testing on my local environment, virtualenv 
+		                and virtualenvwrapper to keep my workspace accessible and organized, and 
+		                Google Cloud SDK to test and deploy my website.
+		                </p>
+		                <div class="row" style="padding: 10px;">
+			            	<div class="tool">Python</div>
+			            	<div class="tool">HTML</div>
+			            	<div class="tool">CSS</div>
+			            	<div class="tool">Javascript</div>
+			            	<div class="tool">Bootstrap</div>
+			            	<div class="tool">Flask</div>
+			            	<div class="tool">Google Cloud SDK</div>
+			            	<div class="tool">virtual-env</div>
+			            </div>
+	                </div>
+	            </div>
+
+			</div>
+			<div class="mySlides">
+				<div class="row"><h3>Deep Learning | Xometry Internship</h3></div>
+				<div class="row"><h4>Summer 2017</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+		                <p>During my internship at Xometry, I worked on several projects with different teams in the company. The most notable one I worked on a deep learning project in which I had to cluster various CAD parts based on thumbnail images and shape distributions. I researched into machine learning and deep learning (see here) and compiled my findings of the results of clustering into a jupyter notebook.
+		                </p>
+		                <p>
+						Some other tools I used during this process were scikit-learn for its deep learning library, MongoDB to retrieve the shape distribution data and other data on the parts’ geometry, and AWS for its graphics processing capabilities.
+						</p>
+						<div class="row" style="padding: 10px;">
+			            	<div class="tool">Python</div>
+			            	<div class="tool">scikit-learn</div>
+			            	<div class="tool">MongoDB</div>
+			            	<div class="tool">AWS</div>
+			            	<div class="tool">Deep Learning</div>
+			            </div>
+	                </div>
+	            </div>
+			</div>
+			
+			<div class="mySlides">
+				<div class="row"><h3>Tabletop Space Museum | HackED</h3></div>
+				<div class="row"><h4>Fall 2017</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+	                	<p>
+		                For this hackathon hosted by the Tech Ed Club at CMU, my team and I designed and developed a mobile app that allowed users to interact with and learn about our solar system through augmented reality (AR).  
+		                </p>
+		                <p>
+						To do this, we used Google’s AR Library, ARCore, to program the AR portion, Unity to render the planets, and, of course, Visual Android Studio to design and develop the core, as well as the UI of the app.
+						</p>
+						<div class="row" style="padding: 10px;">
+			            	<div class="tool">Java</div>
+			            	<div class="tool">Kotlin</div>
+			            	<div class="tool">ARCore</div>
+			            	<div class="tool">Unity</div>
+			            	<div class="tool">Android Studio</div>
+			            </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="mySlides">
+				<div class="row"><h3>Meme Organizer | TartanHacks</h3></div>
+				<div class="row"><h4>Summer 2017</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+	                	<p>
+		                For this hackathon hosted by ScottyLabs at CMU, my team and I designed and developed a web app that allows users to sort and organize their memes...what more needs to be said lol.
+		                </p>
+		                <div class="row" style="padding: 10px;">
+			            	<div class="tool">HTML</div>
+			            	<div class="tool">CSS</div>
+			            	<div class="tool">Javascript</div>
+			            	<div class="tool">jQuery</div>
+			            </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="mySlides">
+				<div class="row"><h3>Electric Skateboard with Tilt Detection | Build18</h3></div>
+				<div class="row"><h4>Summer 2017</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+                		<p>
+		                For this week-long event hosted by the Electrical and Computer Engineering Dept at CMU, my team and I designed an electric skateboard that would speed up and slow down depending on the user’s tilt.
+		                </p>
+		                <p>
+						To do this, we used an arduino to control the speed of the motor depending on the force on the pressure sensors. We also built the circuit that would translate the signal from the arduino to the motors.
+						</p>
+						<div class="row" style="padding: 10px;">
+			            	<div class="tool">C++</div>
+			            	<div class="tool">Arduino</div>
+			            	<div class="tool">Soldering?</div>
+			            	<div class="tool">Wood-working??</div>
+			            </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="mySlides">
+				<div class="row"><h3>CandiaGu.github.io</h3></div>
+				<div class="row"><h4>Summer 2017</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+	                	<p>
+		                As a personal project, I decided to learn web development with codeacademy and develop my very first website. Through my website, I learned the very basics of HTML, CSS and Javascript along with Bootstrap, and was deployed through GitHub. Although very rudimentary, it was a good stepping stone for where I am now. Check it out here.
+		                </p>
+		                <div class="row" style="padding: 10px;">
+			            	<div class="tool">HTML</div>
+			            	<div class="tool">Javascript</div>
+			            	<div class="tool">CSS</div>
+			            	<div class="tool">Bootstrap</div>
+			            </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="mySlides">
+				<div class="row"><h3>Globe | 112 Final Project</h3></div>
+				<div class="row"><h4>Summer 2017</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+	                	<p>
+		                As a final project for my infamous introductory CS class (15-112 for the CMU Alumnus out there), I designed and developed an aesthetic game that revolves around the silly premise of catching comets to plant trees. This game uses 2.5D to simulate 3-dimensions by changing the sizes of the sprite and of the trees and so forth. I also added in facial detection for fun in which, if a face is not detected the game pauses itself.
+		                </p>
+		                <div class="row" style="padding: 10px;">
+			            	<div class="tool">Python</div>
+			            	<div class="tool">OpenCV</div>
+			            	<div class="tool">PyGame</div>
+			            </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="mySlides">
+				<div class="row"><h3>Bubble Pop! | Hack112</h3></div>
+				<div class="row"><h4>Summer 2017</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+	                	<p>
+		                Again for the infamous introductory CS class, they held a hackathon for n00bz, in which my team and I developed a flashcard game to assist with language learning.
+		                </p>
+		                <div class="row" style="padding: 10px;">
+			            	<div class="tool">Python</div>
+			            	<div class="tool">PyGame</div>
+			            </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="mySlides">
+				<div class="row"><h3>JoyBoard | HackCMU</h3></div>
+				<div class="row"><h4>Summer 2017</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+	                	<p>
+		                For this hackathon sponsored by AMC@CMU, my team and I decided to develop an alternative keyboard extension with the purpose of making typing on mobile phones faster and easier.
+		                </p>
+		                <div class="row" style="padding: 10px;">
+			            	<div class="tool">Java</div>
+			            	<div class="tool">Android Studio</div>
+			            </div>
+	                </div>
+	            </div>
+			</div>
 		</div> 
+
 
 		<div class="col-7" >
 			<div class = row style="margin-left: 2px;">
-				<div class="card" id = "persweb2">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				<div class="card" id = "persweb2" onclick="currentSlide(1)">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/website.png')}}" alt="Card image cap">
 				  <div class="card-block">
 				  	<div>
 				    <h4 class="card-title">Personal Website</h4>
 				    </div>
 				  </div>
 				</div>
-				<div class="card" id = "card2">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				<div class="card" id = "card2" onclick="currentSlide(2)">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/xometry.jpg')}}" alt="Card image cap">
 				  <div class="card-block">
-				    <h4 class="card-title">Xometry</h4>
+				    <h4 class="card-title">Deep Learning | Xometry</h4>
 				  </div>
 				</div>
-				<div class="card">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				<div class="card" onclick="currentSlide(3)">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/sadplanet.png')}}" alt="Card image cap">
 				  <div class="card-block">
-				    <h4 class="card-title">Tabletop Space Museum</h4>
+				    <h4 class="card-title">Tabletop Space Museum | HackED</h4>
 				  </div>
 				</div>
 			</div>
 			<div class = row style="margin-left: 2px;">
-				<div class="card">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				<div class="card"  onclick="currentSlide(4)">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/tartar.jpg')}}" alt="Card image cap">
 				  <div class="card-block">
-				    <h4 class="card-title">Meme Organizer</h4>
+				    <h4 class="card-title">Meme Organizer | TartanHacks</h4>
 				  </div>
 				</div>
-				<div class="card">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				<div class="card"  onclick="currentSlide(5)">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/skatedraft.png')}}" alt="Card image cap">
 				  <div class="card-block">
-				    <h4 class="card-title">Electric Skateboard with Tilt Detection</h4>
+				    <h4 class="card-title">Electric Skateboard with Tilt Detection | Build18</h4>
 				  </div>
 				</div>
-				<div class="card">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				<div class="card" onclick="currentSlide(6)">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/cggithub.png')}}" alt="Card image cap">
 				  <div class="card-block">
 				    <h4 class="card-title">CandiaGu.github.io</h4>
 				  </div>
 				</div>
 			</div>
 			<div class = row style="margin-left: 2px;">
-				<div class="card">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				<div class="card" onclick="currentSlide(7)">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/Sketch.png')}}" alt="Card image cap">
 				  <div class="card-block">
-				    <h4 class="card-title">Globe</h4>
+				    <h4 class="card-title">Globe | 112 Final Project</h4>
 				  </div>
 				</div>
-				<div class="card">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				<div class="card" onclick="currentSlide(8)">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/gallery.jpg')}}" alt="Card image cap">
 				  <div class="card-block">
-				    <h4 class="card-title">Bubble Pop!</h4>
+				    <h4 class="card-title">Bubble Pop! | Hack112</h4>
 				  </div>
 				</div>
-				<div class="card">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				<div class="card" onclick="currentSlide(9)">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/joyboard.png')}}" alt="Card image cap">
 				  <div class="card-block">
-				    <h4 class="card-title">JoyBoard</h4>
+				    <h4 class="card-title">JoyBoard | HackCMU</h4>
 				  </div>
 				</div>
 			</div>

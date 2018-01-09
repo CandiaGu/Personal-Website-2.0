@@ -1,8 +1,9 @@
 $(document).ready(
     function() {
         
-        $("#persweb2" ).click(function() {
-            
+
+        
+        /*$("#persweb2" ).click(function() {
             $('#projdesc').html('\
                 <div class="row" ><h3>Personal Website V2</h3></div>\
                 <div class="row"><div class="col-1"></div>\
@@ -21,7 +22,7 @@ $(document).ready(
         $("#persweb2").click();
         $( "#card2" ).click(function() {
             $('#projdesc').html('<p>More replaced text.</p>');
-        });
+        });*/
 
 
 });

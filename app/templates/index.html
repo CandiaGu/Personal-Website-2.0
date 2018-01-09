@@ -100,13 +100,13 @@
 		<!-- Projects -->
 		<div class="container-fluid relative nopadding" id= "projectsPG">
 
-			<div class = "row">
-				<div class = "col-7"></div>
-				<div class = "col-4">
+			<div class = "row" style="margin-bottom: 5vh;">
+				<!--div class = "col-3"></div-->
+				<div class = "col-7" style="text-align: right;">
 					<h1 style="border-bottom: 2px solid currentColor;">Featured Projects</h1>
 				</div>
-				<div class = "col-1 allproj">
-					<a href="{{ url_for('projects') }}">see all projects > </a>
+				<div class = "col-5">
+					<a href="{{ url_for('projects') }}">all projects > </a>
 				</div>
 			</div>
 			<div class="row smlscrn" style="background-color: rgba(255,255,255,0.8);">
@@ -117,27 +117,30 @@
 					<div class="row">
 						<h3> Internship at Xometry </h3>
 						<p>
-						Implemented deep learning to create clusters of CAD models based
-						on shape distribution and thumbnail images, generated using data
-						retrieved from MongoDB.
-						</p>
-						<p>
-						Created a web crawler to update prices of blank parts in server database
+						In which I implemented deep learning to create clusters of CAD models based
+						on shape distribution and thumbnail images and created a web crawler to update prices of blank parts in server database
 						using data from mainstream material suppliers.
 						</p>
-						
+						<div class="row" style="padding: 10px;">
+			            	<div class="tool">Python</div>
+			            	<div class="tool">scikit-learn</div>
+			            	<div class="tool">jupyter-notebook</div>
+			            	<div class="tool">MongoDB</div>
+			            	<div class="tool">AWS</div>
+			            	<div class="tool">Deep Learning</div>
+			            </div>
 					</div>
 				</div>
 				<div class="col-1 full" style="display: table;" >
 					<div style="display:table-cell;vertical-align: middle; text-align: center;">
-						<a href="#"><i class="material-icons">keyboard_arrow_right</i></a>
+						<!--a href="#"><i class="material-icons">keyboard_arrow_right</i></a-->
 					</div>
 				</div>
 
 			</div>
 			
 
-			<div class="row smlscrn" style="background-color: rgba(255,255,255,0.8);">
+			<div class="row smlscrn" style="background-color: rgba(255,255,255,0.8); border-top: solid 4px white;">
 				<div class="col-7" style="overflow:hidden;padding-right:0px; padding-left:0px;padding-top: 0vh;">
 					<img style="width:100%;height: 100%;" src="{{ url_for('static', filename ='img/website.png') }}" alt="logo">
 				</div>
@@ -148,15 +151,24 @@
 					As you've just experienced, this website was designed using parallax to 
 					make the experience feel more interactive and immersive.
 					</p>
-					</div>
+					<div class="row" style="padding: 10px;">
+			            	<div class="tool">Python</div>
+			            	<div class="tool">HTML</div>
+			            	<div class="tool">CSS</div>
+			            	<div class="tool">Javascript</div>
+			            	<div class="tool">Flask</div>
+			            	<div class="tool">Google Cloud SDK</div>
+			       
+			        </div>
+			        </div>
 				</div>
 				<div class="col-1 full" style="display: table;" >
 					<div style="display:table-cell;vertical-align: middle; text-align: center;">
-						<a href="#"><i class="material-icons">keyboard_arrow_right</i></a>
+						<!--a href="#"><i class="material-icons">keyboard_arrow_right</i></a-->
 					</div>
 				</div>
 			</div>
-			<div class="row smlscrn" style="background-color: rgba(255,255,255,0.8);">
+			<div class="row smlscrn" style="background-color: rgba(255,255,255,0.8); border-top: solid 4px white;">
 				<div class="col-7" style="overflow:hidden;padding-right:0px; padding-left:0px;padding-top: 0vh;">
 					<img style="width:100%;height: 100%;" src="{{ url_for('static', filename ='img/holopicto.jpg') }}" alt="logo">
 				</div>
@@ -170,7 +182,7 @@
 				</div>
 				<div class="col-1 full" style="display: table;" >
 					<div style="display:table-cell;vertical-align: middle; text-align: center;">
-						<a href="#"><i class="material-icons">keyboard_arrow_right</i></a>
+						<!--a href="#"><i class="material-icons">keyboard_arrow_right</i></a-->
 					</div>
 				</div>
 			</div>

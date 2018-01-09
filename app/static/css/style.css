@@ -269,15 +269,17 @@ a:hover{
  	padding-bottom: 2vh;
  }
 
- .material-icons.md-18 { font-size: 18px; }
+.material-icons.md-18 { font-size: 18px; }
+/* Projects ---------------------------------------*/
 .card{
 	width: 12rem;
 	height: 15rem;
 	margin:10px;
 	overflow: hidden;
+	transition: filter 0.5s ease-in-out;
 }
 .card:hover{
-	filter: opacity(0.8);
+	filter: opacity(0.5);
 }
 .card-img-top{
 	object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
@@ -296,6 +298,39 @@ a:hover{
 	vertical-align: middle;
 }
 
+.tool{
+	border: solid 0.5px;
+	border-radius: 4px;
+	margin:5px;
+	padding: 3px;
+	font-size: 10px;
+	font-family: 'Source Code Pro';
+	font-weight: bold;
+	transition: background 0.5s ease-in-out;
+}
+.tool:hover{
+	background-color: rgba(256,256,256,0.5);
+}
+
 #projdesc{
 	padding: 5vh;
 }
+
+#projdesc .tool{
+} 
+
+
+.mySlides {display: none}
+
+.mySlides h3{
+	font-size: 2.0em;
+	opacity: 0.7;
+	margin-bottom: 5vh;
+}
+
+.mySlides h4{
+	opacity: 0.5;
+}
+
+
+
