@@ -16,29 +16,30 @@ h3{
 	font-size: 1.2em;
 	font-weight: bold;
 }
+h4{
+	font-size: 1.0em;
+}
 p{
 
 	font-size: 1em;
 }
-a{ 
-	color:gray;
+::-webkit-scrollbar { 
+    display: none; 
 }
-
-#navbar a{
+/* Base --------------------------------------------*/
+a{
 	color:gray;
-	width:50px;
-	text-decoration: none;
-    border-bottom: 2px solid transparent;    
+	width:50px
     width: 0px;
     transition: 0.5s ;
     /*white-space: nowrap;*/
     height: 23px;  
 }
 
-#navbar a:hover{
+a:hover{
 	color:black;
-	text-decoration:none;
-    border-bottom: 2px solid black; 
+	font-weight: bolder;
+    border-bottom: none; 
     width: 50px;
 }
 
@@ -122,7 +123,7 @@ a{
 	margin-right: 0;
 	padding:0;
 }
-.container-fluid{
+.container-fluid:not(#navbar){
 	margin-top: 30vh;
 	margin-right:0;
 	margin-left:0;
@@ -261,9 +262,40 @@ a{
 	background-image: url('../img/arrow-right.png');
 }
  #navbar{
- 	padding-top: 5vh;
+ 	margin-top: 2vh;
+ 	padding-top: 2vh;
+ 	background-color: white;
  	text-align: center;
+ 	padding-bottom: 2vh;
  }
 
  .material-icons.md-18 { font-size: 18px; }
+.card{
+	width: 12rem;
+	height: 15rem;
+	margin:10px;
+	overflow: hidden;
+}
+.card:hover{
+	filter: opacity(0.8);
+}
+.card-img-top{
+	object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+	object-position: center; /* Center the image within the element */
+	width: 100%;
+	height: 9rem;
+	
+}
+.card-block{
+	padding: 10px;
+	display: table;
+}
+.card-block div{
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+}
 
+#projdesc{
+	padding: 5vh;
+}

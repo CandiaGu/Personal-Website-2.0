@@ -1,17 +1,79 @@
 {% extends "base.html" %}
 {% block cover %}
-<div class="container-fluid">
-  	<h1>Projects</h1>
+<div class="container" style = "height: 20vh; display: table;">
+  	<h1 style = "text-align: center;display: table-cell; vertical-align: middle;">Projects</h1>
 </div>
 {% endblock %}
 {% block body %}
-<div class="container-fluid">
+<div class="container-fluid" style = "margin-top:5vh;">
 	<div class="row">
-		<div class="col-6">
-			Project Descriptions
-		</div>
-		<div class="col-6">
-			Projects
+		<div id="projdesc" class="col-5" style = "height:100%; position:sticky;position: -webkit-sticky; top: 10vh; background-color: #437dd3; color: #ffffff; margin-top: 10px;">
+			Project Description
+		</div> 
+
+		<div class="col-7" >
+			<div class = row style="margin-left: 2px;">
+				<div class="card" id = "persweb2">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				  <div class="card-block">
+				  	<div>
+				    <h4 class="card-title">Personal Website</h4>
+				    </div>
+				  </div>
+				</div>
+				<div class="card" id = "card2">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				  <div class="card-block">
+				    <h4 class="card-title">Xometry</h4>
+				  </div>
+				</div>
+				<div class="card">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				  <div class="card-block">
+				    <h4 class="card-title">Tabletop Space Museum</h4>
+				  </div>
+				</div>
+			</div>
+			<div class = row style="margin-left: 2px;">
+				<div class="card">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				  <div class="card-block">
+				    <h4 class="card-title">Meme Organizer</h4>
+				  </div>
+				</div>
+				<div class="card">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				  <div class="card-block">
+				    <h4 class="card-title">Electric Skateboard with Tilt Detection</h4>
+				  </div>
+				</div>
+				<div class="card">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				  <div class="card-block">
+				    <h4 class="card-title">CandiaGu.github.io</h4>
+				  </div>
+				</div>
+			</div>
+			<div class = row style="margin-left: 2px;">
+				<div class="card">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				  <div class="card-block">
+				    <h4 class="card-title">Globe</h4>
+				  </div>
+				</div>
+				<div class="card">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				  <div class="card-block">
+				    <h4 class="card-title">Bubble Pop!</h4>
+				  </div>
+				</div>
+				<div class="card">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/logosm.png')}}" alt="Card image cap">
+				  <div class="card-block">
+				    <h4 class="card-title">JoyBoard</h4>
+				  </div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>  

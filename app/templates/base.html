@@ -28,11 +28,11 @@
   {% block cover %}{% endblock %}
   <div class = "content">
 <!-- Navbar -->
-  <div class = "container" id="navbar">
+  <div class = "container-fluid" id="navbar" style = "height:100%; position:sticky;position: -webkit-sticky; top: -1px; z-index: 1; ">
     <div class = "row">
-      <div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">home</a></div>
+      <div class = "col-sm-4 underline"><a href = "{{ url_for('index') }}">home</a></div>
       <div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">projects</a></div>
-      <div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">art + design</a></div>
+      <div class = "col-sm-4 underline"><a href = "{{ url_for('portfolio') }}">art + design</a></div>
     </div>
   </div>
   {% block body %}{% endblock %}
