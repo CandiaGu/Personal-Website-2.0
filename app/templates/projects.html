@@ -11,6 +11,28 @@
 	<div class="row">
 		<div id="projdesc" class="col-5" style = "height:100%; position:sticky;position: -webkit-sticky; top: 10vh; background-color: #437dd3; color: #ffffff; margin-top: 10px;">
 			<div class="mySlides">
+				<div class="row"><h3>HoloPicto | Build18</h3></div>
+				<div class="row"><h4>Winter 2018</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+	                	<p>
+		                For this week-long event hosted by the Electrical and Computer Engineering Dept at CMU, my team and I designed and constructed an editable hologram controlled using hand gestures.
+		                </p>
+		                <p>
+						To do this, we used a leapmotion sensor to detect hand gestures and a TV reflected onto an acrylic pyramid to create the illusion that the objects are in 3-dimensional space. We used java in processing to render the 3-D graphics and manipulate the shapes drawn.
+						</p>
+						<div class="row" style="padding: 10px;">
+			            	<div class="tool">Java</div>
+			            	<div class="tool">Kotlin</div>
+			            	<div class="tool">ARCore</div>
+			            	<div class="tool">Unity</div>
+			            	<div class="tool">Android Studio</div>
+			            </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="mySlides">
 				<div class="row"><h3>Personal Website V2</h3></div>
 				<div class="row"><h4>Winter 2018</h4></div>
 	            <div class="row">
@@ -196,7 +218,13 @@
 
 		<div class="col-7" >
 			<div class = row style="margin-left: 2px;">
-				<div class="card" id = "persweb2" onclick="currentSlide(1)">
+				<div class="card" onclick="currentSlide(1)">
+				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/holopictoreal.jpg')}}" alt="Card image cap">
+				  <div class="card-block">
+				    <h4 class="card-title">HoloPicto | Build18</h4>
+				  </div>
+				</div>
+				<div class="card" id = "persweb2" onclick="currentSlide(2)">
 				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/website.png')}}" alt="Card image cap">
 				  <div class="card-block">
 				  	<div>
@@ -204,24 +232,19 @@
 				    </div>
 				  </div>
 				</div>
-				<div class="card" id = "card2" onclick="currentSlide(2)">
+				<div class="card" id = "card2" onclick="currentSlide(3)">
 				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/xometry.jpg')}}" alt="Card image cap">
 				  <div class="card-block">
 				    <h4 class="card-title">Deep Learning | Xometry</h4>
 				  </div>
 				</div>
-				<div class="card" onclick="currentSlide(3)">
+				
+			</div>
+			<div class = row style="margin-left: 2px;">
+				<div class="card" onclick="currentSlide(4)">
 				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/sadplanet.png')}}" alt="Card image cap">
 				  <div class="card-block">
 				    <h4 class="card-title">Tabletop Space Museum | HackED</h4>
-				  </div>
-				</div>
-			</div>
-			<div class = row style="margin-left: 2px;">
-				<div class="card"  onclick="currentSlide(4)">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/tartar.jpg')}}" alt="Card image cap">
-				  <div class="card-block">
-				    <h4 class="card-title">Meme Organizer | TartanHacks</h4>
 				  </div>
 				</div>
 				<div class="card"  onclick="currentSlide(5)">
