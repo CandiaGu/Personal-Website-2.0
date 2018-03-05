@@ -12,8 +12,13 @@ def index():
 def projects():
 	return render_template("projects.html")
 
+
+
 @app.route('/portfolio')
 def portfolio():
 	return render_template("portfolio.html")
 
+@app.route('/portfolio/<pic>')
+def projectpg(pic=None):
+	return render_template("portfoliopg.html", pic=pic)
 

@@ -351,8 +351,8 @@ a:hover:not(.car){
 
 .clickImage{
 	object-fit: cover;
-	width:260px;
-	height:260px;
+	width:250px;
+	height:250px;
 	transition: 0.5s;
 }
 
@@ -399,3 +399,39 @@ a:hover:not(.car){
   transition: opacity .2s, visibility .2s;
 }
 
+/* Portfolio ----------------- */
+.imagePort{
+	/*object-fit: cover;*/
+	display: block /*for the img inside your div */ 
+	margin: 0 auto 
+	width:auto;
+	max-width: 60vw;
+	max-height:80vh;
+	transition: 0.5s;
+
+}
+
+.moreImagePort{
+	max-width: 100%;
+}
+
+.arrowCenter{
+	 position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     width: 100px;
+     height: 100px;
+     transition: 0.5s;
+}
+
+.arrowCenter:hover{
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.botmarg{
+	margin-bottom: 7vh;
+}

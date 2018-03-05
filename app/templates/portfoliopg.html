@@ -1,0 +1,317 @@
+{% extends "base.html" %}
+{% block cover %}
+<div class="row">
+<div class="col-4"></div>
+<div class="col-4"></div>
+<div class="col-4" style="border-top:2px solid #4286f4;"></div>
+
+</div>
+{% endblock %}
+{% block body %}
+
+{% if pic=='teaparty' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='flowers') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/teaparty.png')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='field') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-6" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2 >Tea Party | ASA Booth 2018</h2>
+	<div class="botmarg"> Digital </div>
+	<p>For this year's Carnival, I decided to lead a design section in Asian Student Association's (ASA) booth. The theme 
+	for this year was based off Legend of Korra, and after looking at the scene my portion takes places in, I decided
+	to invent my own scene based on the general concept. Although this particular scenery never occured in the actual TV show,
+	it matches the show's feel in its fantastical and mystical sense.</p>
+	</div>
+</div>
+{% elif pic=='field' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='teaparty') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/field.jpg')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='website') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-6" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2>Red Field</h2>
+	<div  class="botmarg"> Digital </div>
+	<p>In this piece, I tried experimenting with different color pallettes, especially the primary colors, to 
+	give an unsettling yet familiar reflection of the realistic world. In this particular scene, I really wanted
+	to let off a sense of serenity and peace in this oddly colored world. </p>
+		</div>
+</div>
+{% elif pic=='website' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='field') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/website.png')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='board') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-6" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2>Blue Field</h2>
+	<div  class="botmarg"> Digital + Javascript</div>
+	<p>In this cover piece, I tried to limit my color pallete even more to just this dim blue and muted red to bring out
+	the grandeur of the scene. This was further accented by putting the person in the scene to express the scale of the
+	scene.
+	<p>
+	However, this piece is not just the cover itself, but this entire <a href="/">website</a>, which I designed and programmed from scratch. Each page was carefully thought out to best show off to the intended audience and to express myself in a way that reflects
+	both my technical and creative side. This very image comes to life on the front page, in which I used a parallax effect to
+	visualize the depth of the scene.
+	</p>
+		</div>
+</div>
+{% elif pic=='board' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='website') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/Board.png')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='astro') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-6" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	
+	<h2>Dormant</h2>
+	<div  class="botmarg"> Pen </div>
+	<p>In this piece, I revisited shading as expressed by the distances between the lines rather than the visually darker.
+	I also wanted to try different angles in both perspecitve and facial angles. Although I did base this image off an
+	image I took while I was feeling especially uninspired, the translation from pixels to line edges was rather
+	challenging, as it was hard to tell when an line is preferred over whitespace.</p>
+		</div>
+</div>
+{% elif pic=='astro' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='board') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/Astronaut.png')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='guy') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-8" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2>Astronaut Concept Art</h2>
+	<div  class="botmarg"> Digital </div>
+	<p>This was concept art for a game I never developed. The premise was going to be an astronaut jumping
+	onto various objects to reach various stages of the game. Below are some more scenes of the astronaut. </p>
+	
+	<div class="row">
+		<div class="col-4">
+			<img class=" moreImagePort" src="{{url_for('static', filename='img/port/Astronaut2.png')}}">
+		</div>
+		<div class="col-4">
+			<img class=" moreImagePort " src="{{url_for('static', filename='img/port/Astronaut3.png')}}">
+		</div>
+		<div class="col-4">
+			<img class=" moreImagePort " src="{{url_for('static', filename='img/port/Astronaut4.png')}}">
+		</div>
+	</div>
+	</div>
+</div>
+{% elif pic=='guy' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='astro') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/WeirdGuyStudy.jpg')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='fall') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-6" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2>Study of Some Guy</h2>
+	<div  class="botmarg"> Digital</div>
+	<p>I really liked how peaceful the reference image felt, so I used this opportunity to expand my observation
+	and technical skills. </p>
+	</div>
+</div>
+{% elif pic=='fall' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='guy') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/falling1.jpg')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='kokedama') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-8" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2>Falling Series</h2>
+	<div  class="botmarg">Watercolor + Pen </div>
+	<p>In this piece, I wanted to contrast the peacefulness of the people falling in the images with the general fear of heights
+	and falling from high places most people have. I also wanted to revisit the interesting textures watercolors have.
+	The organicness of this medium matches very well with the unusual peacefulness of these scenes. Below are more
+	pieces from the same series--</p>
+		<div class="row">
+		<div class="col-4">
+			<img class=" moreImagePort" src="{{url_for('static', filename='img/port/falling2.jpg')}}">
+		</div>
+		<div class="col-4">
+			<img class=" moreImagePort " src="{{url_for('static', filename='img/port/falling3.jpg')}}">
+		</div>
+		<div class="col-4">
+			<img class=" moreImagePort " src="{{url_for('static', filename='img/port/falling4.jpg')}}">
+		</div>
+	</div>
+</div>
+
+</div>
+{% elif pic=='kokedama' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='fall') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/kokedama.png')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='holopicto') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-6" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2>Kokedama Festival</h2>
+	<div  class="botmarg" >Digital</div>
+
+	<p>This is a poster I designed for my Document Design class in which I had to promote a very specific aspect of 
+	urban gardening. I used very brightly colored elements to make the event seem very approachable and fun. The
+    bubblyness of the Japanese characters not only promoted the culture of the event, but also added to the childlike
+    aspect of the event.</p>
+    <p> To summarize, kokedama is a type of mossball that people can used to grow other plants out of and is very 
+    	aesthetically pleasing. It is often hung on strings as display, hence the line coming in and out of the center
+    	sphere.
+    </p>
+		</div>
+</div>
+{% elif pic=='holopicto' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='kokedama') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/holopicto.jpg')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='resume') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-7" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2>HoloPicto</h2>
+	<div  class="botmarg">TV + Table</div>
+	<p class="botmarg">For this project, my team and I designed an editable hologram for Build18, a week-long hardware
+	hackathon. I designed the setup of the table, the TV, and the acrylic pyramid as well as the
+	gestures to use control the user interface and the color and line thickness settings. For a demo
+	see below --</p>
+	<video width="800" height="400" controls>
+  <source src="{{url_for('static', filename='vid/holopicto.mp4')}}" type="video/mp4">
+</video>
+	</div>
+</div>
+{% elif pic=='resume' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='holopicto') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/Resume_updated.png')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='clouds') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-6" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2>Personal Resume</h2>
+	<div  class="botmarg">Typography</div>
+	<p>Although not typically a portfolio piece, the different fundamental concepts I learned in Document Design class were applied here to maximize the reader experience. Each portion was carefully thought out to allow the eye to easily
+	scan over the contents and pinpoint the key portions of the resume, paying special attention to various characteristics such as leading, font size, line weight etc.</p>
+		</div>
+</div>
+{% elif pic=='clouds' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='resume') }}"></a>
+	</div>
+	<div class="col-8">
+	  	<img class=" imagePort  clickImageCenter" src="{{url_for('static', filename='img/port/Congressional.jpg')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='flowers') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-6" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2>Idle</h2>
+	<div  class="botmarg">Acrylic</div>
+	<p>This was a piece I created based on my neighborhood on my way back from school. The clouds looked very fluffy and
+	interesting to look at, so I captured that on my canvas using acrylic paint.</p>
+		</div>
+</div>
+{% elif pic=='flowers' %}
+<div class="row" style="margin-top: 10vh;">
+	<div class="col-2">
+		<a class="car carousel-control-prev-icon arrowCenter" href="{{ url_for('projectpg',pic='clouds') }}"></a>
+	</div>
+	<div class="col-8 clickImageCenter">
+	  	<img class=" imagePort clickImageCenter" src="{{url_for('static', filename='img/port/flowers.png')}}">
+	</div>
+	<div class="col-2">
+		<a class="car carousel-control-next-icon arrowCenter" href="{{ url_for('projectpg',pic='teaparty') }}"></a>
+	</div>
+
+</div>
+<div class="row">
+	<div class ="col-6" style = "margin-left:20vw; margin-right:20vw;margin-top:5vw">
+	<h2>Bouquet</h2>
+	<div  class="botmarg">Digital</div>
+	<p>I attempted to draw this bouquet in one stroke, researching various types of flowers beforehand as well as various leaves and
+	other bushery. </p>
+		</div>
+</div>
+
+ {% endif %}
+
+{% endblock %}

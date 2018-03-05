@@ -3,7 +3,7 @@
 <div class="row">
 <div class="col-4"></div>
 <div class="col-4"></div>
-<div class="col-4" style="border-top:2px solid lightgray;"></div>
+<div class="col-4" style="border-top:2px solid #4286f4;"></div>
 
 </div>
 {% endblock %}
@@ -16,43 +16,41 @@
 	<div class="row" style="margin-top: 20vh;">
 		<div class="clickImageCenter" >
 			<div class = "row" style="margin-left: 2px;">
-				<div class = "clickImageWrap" onclick="currentSlide(1)">
-				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/teaparty.png')}}" alt="Card image cap">
-				  <!--div class="card-block">
-				    <h4 class="card-title">HoloPicto | Build18</h4>
-				  </div-->
+				<div class = "clickImageWrap">
+				  	<a href="{{ url_for('projectpg',pic='teaparty') }}">
+				  		<img class="clickImagePort" src="{{url_for('static', filename='img/port/teaparty.png')}}" alt="Card image cap">
+				  	</a>
 				</div>
-				<div class = "clickImageWrap" onclick="currentSlide(2)">
-				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/field.jpg')}}" alt="Card image cap">
-				  <!--div class="card-block">
-				  	<div>
-				    <h4 class="card-title">Personal Website</h4>
-				    </div>
-				  </div-->
+				<div class = "clickImageWrap">
+				  	<a href="{{ url_for('projectpg',pic='field') }}">
+				  		<img class="clickImagePort" src="{{url_for('static', filename='img/port/field.jpg')}}" alt="Card image cap">
+					</a>
 				</div>
-				<div class = "clickImageWrap" onclick="currentSlide(3)">
-				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/website.png')}}" alt="Card image cap">
-				  <!--div class="card-block">
-				    <h4 class="card-title">Deep Learning | Xometry</h4>
-				  </div-->
+				<div class = "clickImageWrap">
+					<a href="{{ url_for('projectpg',pic='website') }}">
+				  		<img class="clickImagePort" src="{{url_for('static', filename='img/port/website.png')}}" alt="Card image cap">
+				  	</a>
 				</div>
 				
 			</div>
 			<div class = "row" style="margin-left: 2px;">
-				<div class = "clickImageWrap" onclick="currentSlide(4)">
-				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/Board.png')}}" alt="Card image cap">
-				  <!--div class="card-block">
-				    <h4 class="card-title">Tabletop Space Museum | HackED</h4>
-				  </div-->
+				<div class = "clickImageWrap">
+					<a href="{{ url_for('projectpg',pic='board') }}">
+				  		<img class="clickImagePort" src="{{url_for('static', filename='img/port/Board.png')}}" alt="Card image cap">
+				  	</a>
 				</div>
 				<div class = "clickImageWrap" onclick="currentSlide(5)">
+					<a href="{{ url_for('projectpg',pic='astro') }}">
 				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/Astronaut.png')}}" alt="Card image cap">
+				</a>
 				  <!--div class="card-block">
 				    <h4 class="card-title">Electric Skateboard with Tilt Detection | Build18</h4>
 				  </div-->
 				</div>
 				<div class = "clickImageWrap" onclick="currentSlide(6)">
+					<a href="{{ url_for('projectpg',pic='guy') }}">
 				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/WeirdGuyStudy.jpg')}}" alt="Card image cap">
+				</a>
 				  <!--div class="card-block">
 				    <h4 class="card-title">CandiaGu.github.io</h4>
 				  </div-->
@@ -60,19 +58,25 @@
 			</div>
 			<div class = "row" style="margin-left: 2px;">
 				<div class = "clickImageWrap" onclick="currentSlide(7)">
+					<a href="{{ url_for('projectpg',pic='fall') }}">
 				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/falling1.jpg')}}" alt="Card image cap">
+				</a>
 				  <!--div class="card-block">
 				    <h4 class="card-title">Globe | 112 Final Project</h4>
 				  </div-->
 				</div>
 				<div class = "clickImageWrap" onclick="currentSlide(8)">
+					<a href="{{ url_for('projectpg',pic='kokedama') }}">
 				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/kokedama.png')}}" alt="Card image cap">
+				</a>
 				  <!--div class="card-block">
 				    <h4 class="card-title">Bubble Pop! | Hack112</h4>
 				  </div-->
 				</div>
 				<div class = "clickImageWrap" onclick="currentSlide(9)">
+					<a href="{{ url_for('projectpg',pic='holopicto') }}">
 				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/holopicto.jpg')}}" alt="Card image cap">
+				</a>
 				  <!--div class="card-block">
 				    <h4 class="card-title">JoyBoard | HackCMU</h4>
 				  </div-->
@@ -80,19 +84,25 @@
 			</div>
 			<div class = "row" style="margin-left: 2px;">
 				<div class = "clickImageWrap" onclick="currentSlide(7)">
+					<a href="{{ url_for('projectpg',pic='resume') }}">
 				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/resumeCrop.png')}}" alt="Card image cap">
+				</a>
 				  <!--div class="card-block">
 				    <h4 class="card-title">Globe | 112 Final Project</h4>
 				  </div-->
 				</div>
 				<div class = "clickImageWrap" onclick="currentSlide(8)">
-				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/Primaryv2.png')}}" alt="Card image cap">
+					<a href="{{ url_for('projectpg',pic='primary') }}">
+				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/Congressional.jpg')}}" alt="Card image cap">
+				</a>
 				  <!--div class="card-block">
 				    <h4 class="card-title">Bubble Pop! | Hack112</h4>
 				  </div-->
 				</div>
 				<div class = "clickImageWrap" onclick="currentSlide(9)">
+					<a href="{{ url_for('projectpg',pic='flowers') }}">
 				  <img class="clickImagePort" src="{{url_for('static', filename='img/port/flowersCrop.png')}}" alt="Card image cap">
+				</a>
 				  <!--div class="card-block">
 				    <h4 class="card-title">JoyBoard | HackCMU</h4>
 				  </div-->
