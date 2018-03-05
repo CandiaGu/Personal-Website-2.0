@@ -1,15 +1,20 @@
 {% extends "base.html" %}
 {% block cover %}
+<div class="row">
+<div class="col-4"></div>
 
+<div class="col-4" style="border-top:2px solid lightgray;"></div>
+
+</div>
 {% endblock %}
 {% block body %}
-<div class="container" style = "height: 20vh; display: table;">
+<!--div class="container" style = "height: 20vh; display: table;">
   	<h1 style = "text-align: center;display: table-cell; vertical-align: middle; 
   	border-bottom: 2px solid;">Projects</h1>
-</div>
+</div-->
 <div class="container-fluid" style = "margin-top:5vh;">
 	<div class="row">
-		<div id="projdesc" class="col-5" style = "height:100%; position:sticky;position: -webkit-sticky; top: 10vh; background-color: #437dd3; color: #ffffff; margin-top: 10px;">
+		<div id="projdesc" class="col-5">
 			<div class="mySlides">
 				<div class="row"><h3>HoloPicto | Build18</h3></div>
 				<div class="row"><h4>Winter 2018</h4></div>
@@ -27,6 +32,7 @@
 			            	<div class="tool">Java</div>
 			            	<div class="tool">Leapmotion</div>
 			            </div>
+			            <div style="text-align:right;"><a href="#" > see how it was done > </a></div>
 	                </div>
 	            </div>
 			</div>
@@ -84,6 +90,29 @@
 			</div>
 			
 			<div class="mySlides">
+				<div class="row"><h3>miniRx | Rothberg Catalyzer Impact-a-Thon</h3></div>
+				<div class="row"><h4>Winter 2018</h4></div>
+	            <div class="row">
+	                <div class="col-1"></div>
+	                <div class="col-11" style = "border-left: solid 1px;">
+                		<p>
+		                For this week-long event, we were to create an economical and impactful solution to a pressing social issue. This year's prompt was to seek solutions to the problem of medical relief during disasters.  Storms, earthquakes, wildfires, floods tornados and other weather-related disasters put people, communities, and infrastructure at risk, requiring rapid response in a variety of ways. To address this issue, my team and I developed a system that uses facial recognition to provide the correct prescriptions to those who need it.
+		                </p>
+		                <p>
+						For the software portion, my team used opencv for facial recognition and firebase to store the face images, as well as the prescription information. On the hardware side, I used an arduino to control the motors used to dispense the medicine. We designed the mechanism to resemble that of a vending machine where the coils were attached to stepper motor which then rotated a corresponding number of times to push out the pills.
+						</p>
+						<p>Our prints and logo were designed by <a href="https://itschrisreyes.myportfolio.com/">Chris Reyes</a>, who handled the design portion of our project.
+						</p>
+						<div class="row" style="padding: 10px;">
+			            	<div class="tool">Python</div>
+			            	<div class="tool">Arduino</div>
+			            	<div class="tool">OpenCV</div>
+			            	<div class="tool">Firebase</div>
+			            </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="mySlides">
 				<div class="row"><h3>Tabletop Space Museum | HackED</h3></div>
 				<div class="row"><h4>Fall 2017</h4></div>
 	            <div class="row">
@@ -105,45 +134,7 @@
 	                </div>
 	            </div>
 			</div>
-			<!--div class="mySlides">
-				<div class="row"><h3>Meme Organizer | TartanHacks</h3></div>
-				<div class="row"><h4>Summer 2017</h4></div>
-	            <div class="row">
-	                <div class="col-1"></div>
-	                <div class="col-11" style = "border-left: solid 1px;">
-	                	<p>
-		                For this hackathon hosted by ScottyLabs at CMU, my team and I designed and developed a web app that allows users to sort and organize their memes...what more needs to be said lol.
-		                </p>
-		                <div class="row" style="padding: 10px;">
-			            	<div class="tool">HTML</div>
-			            	<div class="tool">CSS</div>
-			            	<div class="tool">Javascript</div>
-			            	<div class="tool">jQuery</div>
-			            </div>
-	                </div>
-	            </div>
-			</div-->
-			<div class="mySlides">
-				<div class="row"><h3>Electric Skateboard with Tilt Detection | Build18</h3></div>
-				<div class="row"><h4>Summer 2017</h4></div>
-	            <div class="row">
-	                <div class="col-1"></div>
-	                <div class="col-11" style = "border-left: solid 1px;">
-                		<p>
-		                For this week-long event hosted by the Electrical and Computer Engineering Dept at CMU, my team and I designed an electric skateboard that would speed up and slow down depending on the user’s tilt.
-		                </p>
-		                <p>
-						To do this, we used an arduino to control the speed of the motor depending on the force on the pressure sensors. We also built the circuit that would translate the signal from the arduino to the motors.
-						</p>
-						<div class="row" style="padding: 10px;">
-			            	<div class="tool">C++</div>
-			            	<div class="tool">Arduino</div>
-			            	<div class="tool">Soldering?</div>
-			            	<div class="tool">Wood-working??</div>
-			            </div>
-	                </div>
-	            </div>
-			</div>
+
 			<div class="mySlides">
 				<div class="row"><h3>CandiaGu.github.io</h3></div>
 				<div class="row"><h4>Summer 2017</h4></div>
@@ -216,66 +207,67 @@
 
 		<div class="col-7" >
 			<div class = row style="margin-left: 2px;">
-				<div class="card" onclick="currentSlide(1)">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/holopictoreal.jpg')}}" alt="Card image cap">
-				  <div class="card-block">
-				    <h4 class="card-title">HoloPicto | Build18</h4>
+				<div onclick="currentSlide(1)">
+				  <img class="clickImage" src="{{url_for('static', filename='img/proj/holopictoreal.jpg')}}" alt="Card image cap">
+				  <div class="clickImageDesc">
+				    <h4>HoloPicto | Build18</h4>
 				  </div>
 				</div>
-				<div class="card" id = "persweb2" onclick="currentSlide(2)">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/website.png')}}" alt="Card image cap">
-				  <div class="card-block">
+				<div id = "persweb2" onclick="currentSlide(2)">
+				  <img class="clickImage" src="{{url_for('static', filename='img/proj/website.png')}}" alt="Card image cap">
+				  <!--div class="card-block">
 				  	<div>
 				    <h4 class="card-title">Personal Website</h4>
 				    </div>
-				  </div>
+				  </div-->
 				</div>
-				<div class="card" id = "card2" onclick="currentSlide(3)">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/xometry.jpg')}}" alt="Card image cap">
-				  <div class="card-block">
+				<div id = "card2" onclick="currentSlide(3)">
+				  <img class="clickImage" src="{{url_for('static', filename='img/proj/xometry.jpg')}}" alt="Card image cap">
+				  <!--div class="card-block">
 				    <h4 class="card-title">Deep Learning | Xometry</h4>
-				  </div>
+				  </div-->
 				</div>
 				
 			</div>
 			<div class = row style="margin-left: 2px;">
-				<div class="card" onclick="currentSlide(4)">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/sadplanet.png')}}" alt="Card image cap">
-				  <div class="card-block">
-				    <h4 class="card-title">Tabletop Space Museum | HackED</h4>
-				  </div>
-				</div>
-				<div class="card"  onclick="currentSlide(5)">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/skatedraft.png')}}" alt="Card image cap">
-				  <div class="card-block">
+				<div onclick="currentSlide(4)">
+				  <img class="clickImage" src="{{url_for('static', filename='img/proj/miniRx.jpg')}}" alt="Card image cap">
+				  <!--div class="card-block">
 				    <h4 class="card-title">Electric Skateboard with Tilt Detection | Build18</h4>
-				  </div>
+				  </div-->
 				</div>
-				<div class="card" onclick="currentSlide(6)">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/cggithub.png')}}" alt="Card image cap">
-				  <div class="card-block">
+				<div onclick="currentSlide(5)">
+				  <img class="clickImage" src="{{url_for('static', filename='img/proj/sadplanet.png')}}" alt="Card image cap">
+				  <!--div class="card-block">
+				    <h4 class="card-title">Tabletop Space Museum | HackED</h4>
+				  </div-->
+				</div>
+				
+				<div onclick="currentSlide(6)">
+				  <img class="clickImage" src="{{url_for('static', filename='img/proj/cggithub.png')}}" alt="Card image cap">
+				  <!--div class="card-block">
 				    <h4 class="card-title">CandiaGu.github.io</h4>
-				  </div>
+				  </div-->
 				</div>
 			</div>
 			<div class = row style="margin-left: 2px;">
-				<div class="card" onclick="currentSlide(7)">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/Sketch.png')}}" alt="Card image cap">
-				  <div class="card-block">
+				<div onclick="currentSlide(7)">
+				  <img class="clickImage" src="{{url_for('static', filename='img/proj/Sketch.png')}}" alt="Card image cap">
+				  <!--div class="card-block">
 				    <h4 class="card-title">Globe | 112 Final Project</h4>
-				  </div>
+				  </div-->
 				</div>
-				<div class="card" onclick="currentSlide(8)">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/gallery.jpg')}}" alt="Card image cap">
-				  <div class="card-block">
+				<div onclick="currentSlide(8)">
+				  <img class="clickImage" src="{{url_for('static', filename='img/proj/gallery.jpg')}}" alt="Card image cap">
+				  <!--div class="card-block">
 				    <h4 class="card-title">Bubble Pop! | Hack112</h4>
-				  </div>
+				  </div-->
 				</div>
-				<div class="card" onclick="currentSlide(9)">
-				  <img class="card-img-top" src="{{url_for('static', filename='img/proj/joyboard.png')}}" alt="Card image cap">
-				  <div class="card-block">
+				<div onclick="currentSlide(9)">
+				  <img class="clickImage" src="{{url_for('static', filename='img/proj/joyboard.png')}}" alt="Card image cap">
+				  <!--div class="card-block">
 				    <h4 class="card-title">JoyBoard | HackCMU</h4>
-				  </div>
+				  </div-->
 				</div>
 			</div>
 		</div>

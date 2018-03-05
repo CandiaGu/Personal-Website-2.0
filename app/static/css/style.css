@@ -27,7 +27,7 @@ p{
     display: none; 
 }
 /* Base --------------------------------------------*/
-a{
+a:not(.car){
 	color:gray;
 	width:50px
     width: 0px;
@@ -36,7 +36,7 @@ a{
     height: 23px;  
 }
 
-a:hover{
+a:hover:not(.car){
 	color:black;
 	font-weight: bolder;
     border-bottom: none; 
@@ -246,21 +246,24 @@ a:hover{
 }
 
 .carousel-item img{
-	margin:0 auto;
-	height: 75vh;
+	object-fit: cover;
+	width:15vw;
+	height:70vh;
+	transition: 0.5s;
 }
 .carousel-control-prev-icon{
 	height: 100px;
 	width: 100px;
-	background-size: 100%, 100%;
+	/*background-size: 100%, 100%;*/
 	background-image: url('../img/arrow-left.png');
 }
 .carousel-control-next-icon {
 	height: 100px;
 	width: 100px;
-	background-size: 100%, 100%;
+	/*background-size: 100%, 100%;*/
 	background-image: url('../img/arrow-right.png');
 }
+
  #navbar{
  	margin-top: 2vh;
  	padding-top: 2vh;
@@ -333,4 +336,66 @@ a:hover{
 }
 
 
+/* Projects ------------------------------------------------ */
+
+#projdesc {
+	height:100%;
+	position:sticky;position: 
+	-webkit-sticky; top: 10vh; 
+	margin-top: 10px;
+}
+
+.clickImageWrap{
+	position: relative;
+}
+
+.clickImage{
+	object-fit: cover;
+	width:260px;
+	height:260px;
+	transition: 0.5s;
+}
+
+.clickImagePort{
+	object-fit: cover;
+	width:300px;
+	height:300px;
+	transition: 0.5s;
+	margin: 5px;
+}
+.clickImagePort:hover{
+    filter: brightness(0.5);
+}
+
+.clickImageCenter{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clickImage:hover{
+	
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.clickImageWrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.clickImageDesc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
 

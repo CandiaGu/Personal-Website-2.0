@@ -5,9 +5,9 @@
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!--font-->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway|Playfair+Display|Source+Code+Pro">
   <!-- javascript -->
@@ -15,7 +15,7 @@
   <script type="text/javascript" src="{{ url_for('static', filename = 'js/script.js')}}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename = 'js/carouselscript.js')}}"></script>
   <!-- bootstrap css -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- custom stylesheet -->
   <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
@@ -27,29 +27,29 @@
 <body>
   {% block cover %}{% endblock %}
   <div class = "content">
-<!-- Navbar -->
-  <div class = "container-fluid" id="navbar" style = "height:100%; position:sticky;position: -webkit-sticky; top: -1px; z-index: 1; ">
-    <div class = "row">
-      <div class = "col-sm-4 underline"><a href = "{{ url_for('index') }}">home</a></div>
-      <div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">projects</a></div>
-      <div class = "col-sm-4 underline"><a href = "{{ url_for('portfolio') }}">art + design</a></div>
-    </div>
-  </div>
-  {% block body %}{% endblock %}
-<!-- Footer -->
-  <div>
-    <div class="container-fluid page-footer" >
-      <div class = 'row'>
-        <div class = "col-sm-1"></div>
-        <div class = "col-sm-4" style = "margin-bottom: 2vh;">
-        <p>developed and designed by Candia    <i class="material-icons md-18">mood</i></p> </div>
-        <div class = "col-sm-4"></div>
-        <div class = "col-sm-1"><a href="https://github.com/CandiaGu">github</a></div>
-        <div class = "col-sm-1"><a href="https://www.linkedin.com/in/candia-gu-3a5b88b9?trk=nav_responsive_tab_profile">linkedin</a></div>
-        <div class = "col-sm-1"></div>
+  <!-- Navbar -->
+    <div class = "container-fluid" id="navbar" style = "height:100%; position:sticky;position: -webkit-sticky; top: -1px; z-index: 1; ">
+      <div class = "row">
+        <div class = "col-sm-4 underline"><a href = "{{ url_for('index') }}">home</a></div>
+        <div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">projects</a></div>
+        <div class = "col-sm-4 underline"><a href = "{{ url_for('portfolio') }}">art + design</a></div>
       </div>
     </div>
-  </div>
+    {% block body %}{% endblock %}
+  <!-- Footer -->
+    <div>
+      <div class="container-fluid page-footer" >
+        <div class = 'row'>
+          <div class = "col-sm-1"></div>
+          <div class = "col-sm-4" style = "margin-bottom: 2vh;">
+          <p>developed and designed by Candia    <i class="material-icons md-18">mood</i></p> </div>
+          <div class = "col-sm-4"></div>
+          <div class = "col-sm-1"><a href="https://github.com/CandiaGu">github</a></div>
+          <div class = "col-sm-1"><a href="https://www.linkedin.com/in/candia-gu-3a5b88b9?trk=nav_responsive_tab_profile">linkedin</a></div>
+          <div class = "col-sm-1"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
