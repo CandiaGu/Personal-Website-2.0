@@ -67,7 +67,7 @@ a:hover:not(.car){
 
 }
 .layer-01 {
-   background-image: url('../img/L5.png');
+   background-image: url('../img/cloudsv3.png');
 }
 	.layer-01 .offcenter {
 		display:table-cell;
@@ -97,14 +97,14 @@ a:hover:not(.car){
 		font-size:1.5em ;
 	}
 .layer-02 {
-   background-image: url('../img/L4.png');
+   background-image: url('../img/cloudsv3L3.png');
 }
 
 .layer-03 {
-   background-image: url('../img/L3.png');
+   background-image: url('../img/cloudsv3L2.png');
 }
 .layer-04 {
-   background-image: url('../img/L2.png');
+   background-image: url('../img/cloudsv3L1.png');
 }
 .layer-05 {
    background-image: url('../img/L1.png');
