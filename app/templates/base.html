@@ -30,9 +30,22 @@
   <!-- Navbar -->
     <div class = "container-fluid" id="navbar" style = "height:100%; position:sticky;position: -webkit-sticky; top: -1px; z-index: 1; ">
       <div class = "row">
-        <div class = "col-sm-4 underline"><a href = "{{ url_for('index') }}">home</a></div>
-        <div class = "col-sm-4 underline"><a href = "{{ url_for('projects') }}">projects</a></div>
-        <div class = "col-sm-4 underline"><a href = "{{ url_for('portfolio') }}">art + design</a></div>
+        <div class = "col-sm-3"></div>
+        <div class = "col-sm-2 underline" style="display: inline-block;vertical-align:middle;" >
+
+          <div style="position: relative;top: 50%; transform: translateY(-50%);">
+            <a href = "{{ url_for('projects') }}">experience</a>
+          </div>
+        </div>
+        <div class = "col-sm-2 underline"><a href = "{{ url_for('index') }}"><img style = "width:10vh;height:10vh;" src="{{ url_for('static', filename ='img/cg.png') }}" alt = "cg"></a></div>
+        <div class = "col-sm-2 underline">
+          <div style="position: relative;top: 50%; transform: translateY(-50%);">
+            <a href = "{{ url_for('portfolio') }}">art + design</a></div>
+          </div>
+
+
+        <div class = "col-sm-3"></div>
+        
       </div>
     </div>
     {% block body %}{% endblock %}
