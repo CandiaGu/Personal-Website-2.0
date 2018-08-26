@@ -39,7 +39,7 @@ a:not(.car){
 a:hover:not(.car){
 	color:black;
 	font-weight: bolder;
-    border-bottom: none; 
+    border-bottom: none;
     width: 50px;
 }
 
@@ -74,7 +74,7 @@ a:hover:not(.car){
 		vertical-align:middle;
 		text-align:center;
 		overflow: hidden;
-		height:70vh;
+		height:85vh;
 		width:100vw;
 		color:dimgrey;
 	}
@@ -351,8 +351,8 @@ a:hover:not(.car){
 
 .clickImage{
 	object-fit: cover;
-	width:250px;
-	height:250px;
+	width:18vw;
+	height:18vw;
 	transition: 0.5s;
 }
 
@@ -398,6 +398,9 @@ a:hover:not(.car){
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
+.projDescription{
+	border-left: solid 1px;*/
+}
 
 /* Portfolio ----------------- */
 .imagePort{
@@ -434,4 +437,9 @@ a:hover:not(.car){
 
 .botmarg{
 	margin-bottom: 7vh;
+}
+
+
+.projectCoverContainer{
+	overflow:hidden;padding-right:0px; padding-left:0px;padding-top: 0vh;
 }

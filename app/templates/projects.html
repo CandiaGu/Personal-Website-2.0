@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block cover %}
 <div class="row">
-<div class="col-4"></div>
+<div class="col-3"></div>
 
-<div class="col-4" style="border-top:2px solid #4286f4;"></div>
+<div class="col-2" style="border-top:2px solid #4286f4;"></div>
 
 </div>
 {% endblock %}
@@ -16,23 +16,28 @@
 	<div class="row">
 		<div id="projdesc" class="col-5">
 			<div class="mySlides">
-				<div class="row"><h3>HoloPicto | Build18</h3></div>
-				<div class="row"><h4>Winter 2018</h4></div>
+				<div class="row"><h3>Software Developer Internship | IBM Digital Business Group</h3></div>
+				<div class="row"><h4>Summer 2018</h4></div>
 	            <div class="row">
 	                <div class="col-1"></div>
-	                <div class="col-11" style = "border-left: solid 1px;">
+	                <div class="col-11 projDescription">
 	                	<p>
-		                For this week-long event hosted by the Electrical and Computer Engineering Dept at CMU, my team and I designed and constructed an editable hologram controlled using hand gestures.
-		                </p>
-		                <p>
-						To do this, we used a leapmotion sensor to detect hand gestures and a TV reflected onto an acrylic pyramid to create the illusion that the objects are in 3-dimensional space. We used java in processing to render the 3-D graphics and manipulate the shapes drawn.
-						</p>
+		                During this internship, my team and I designed and implemented a data visualization front-end interface using React, Node and D3 to allow better understanding of win-rates among IBM digital products. Additionally, we incorporated predictive analysis using IBM Watson based on various key performance metrics using data retrieved from DB2 and filtered using SQL in a custom Flask API backend deployed on IBM Cloud.
+		            	</p>
+		            	<p>
+						We also designed an alert system allowing users to be directly alerted of any abnormalities in the key performance indices for various IBM digital services using the same method as the project above.
+		            	</p>
 						<div class="row" style="padding: 10px;">
-			            	<div class="tool">Processing</div>
-			            	<div class="tool">Java</div>
-			            	<div class="tool">Leapmotion</div>
+			            	<div class="tool">Python</div>
+			            	<div class="tool">Javascript</div>
+			            	<div class="tool">ReactJS</div>
+			            	<div class="tool">D3</div>
+			            	<div class="tool">Flask</div>
+			            	<div class="tool">SQL</div>
+			            	<div class="tool">Watson Machine Learning Services</div>
+			            	<div class="tool">IBM Cloud</div>
+			            	<div class="tool">DB2</div>
 			            </div>
-			            <div style="text-align:right;"><a href="#" > see how it was done > </a></div>
 	                </div>
 	            </div>
 			</div>
@@ -187,18 +192,23 @@
 	            </div>
 			</div>
 			<div class="mySlides">
-				<div class="row"><h3>JoyBoard | HackCMU</h3></div>
-				<div class="row"><h4>Summer 2017</h4></div>
+				<div class="row"><h3>HoloPicto | Build18</h3></div>
+				<div class="row"><h4>Winter 2018</h4></div>
 	            <div class="row">
 	                <div class="col-1"></div>
-	                <div class="col-11" style = "border-left: solid 1px;">
+	                <div class="col-11 projDescription">
 	                	<p>
-		                For this hackathon sponsored by AMC@CMU, my team and I decided to develop an alternative keyboard extension with the purpose of making typing on mobile phones faster and easier.
+		                For this week-long event hosted by the Electrical and Computer Engineering Dept at CMU, my team and I designed and constructed an editable hologram controlled using hand gestures.
 		                </p>
-		                <div class="row" style="padding: 10px;">
+		                <p>
+						To do this, we used a leapmotion sensor to detect hand gestures and a TV reflected onto an acrylic pyramid to create the illusion that the objects are in 3-dimensional space. We used java in processing to render the 3-D graphics and manipulate the shapes drawn.
+						</p>
+						<div class="row" style="padding: 10px;">
+			            	<div class="tool">Processing</div>
 			            	<div class="tool">Java</div>
-			            	<div class="tool">Android Studio</div>
+			            	<div class="tool">Leapmotion</div>
 			            </div>
+			            <div style="text-align:right;"><a href="https://github.com/adhebbar/holoPicto" > see how it was done > </a></div>
 	                </div>
 	            </div>
 			</div>
@@ -208,18 +218,11 @@
 		<div class="col-7" >
 			<div class = row style="margin-left: 2px;">
 				<div onclick="currentSlide(1)">
-				  <img class="clickImage" src="{{url_for('static', filename='img/proj/holopictoreal.jpg')}}" alt="Card image cap">
-				  <div class="clickImageDesc">
-				    <h4>HoloPicto | Build18</h4>
-				  </div>
+				  <img class="clickImage" src="{{url_for('static', filename='img/ibm3.png')}}" alt="Card image cap">
 				</div>
 				<div id = "persweb2" onclick="currentSlide(2)">
 				  <img class="clickImage" src="{{url_for('static', filename='img/proj/website.png')}}" alt="Card image cap">
-				  <!--div class="card-block">
-				  	<div>
-				    <h4 class="card-title">Personal Website</h4>
-				    </div>
-				  </div-->
+
 				</div>
 				<div id = "card2" onclick="currentSlide(3)">
 				  <img class="clickImage" src="{{url_for('static', filename='img/proj/xometry.jpg')}}" alt="Card image cap">
@@ -264,7 +267,7 @@
 				  </div-->
 				</div>
 				<div onclick="currentSlide(9)">
-				  <img class="clickImage" src="{{url_for('static', filename='img/proj/joyboard.png')}}" alt="Card image cap">
+				  <img class="clickImage" src="{{url_for('static', filename='img/proj/holopictoreal.jpg')}}" alt="Card image cap">
 				  <!--div class="card-block">
 				    <h4 class="card-title">JoyBoard | HackCMU</h4>
 				  </div-->

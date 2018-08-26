@@ -103,31 +103,30 @@
 			<div class = "row" style="margin-bottom: 5vh;">
 				<!--div class = "col-3"></div-->
 				<div class = "col-7" style="text-align: right;">
-					<h1 style="border-bottom: 2px solid currentColor;">Featured Projects</h1>
+					<h1 style="border-bottom: 2px solid currentColor;">Featured Experiences</h1>
 				</div>
 				<div class = "col-5">
-					<a href="{{ url_for('projects') }}">all projects > </a>
+					<a href="{{ url_for('projects') }}" style = " position: relative; top: 50%;transform: translateY(-50%);">all experiences > </a>
 				</div>
 			</div>
 			<div class="row smlscrn" style="background-color: rgba(255,255,255,0.8);">
-				<div class="col-7" style="overflow:hidden;padding-right:0px; padding-left:0px;padding-top: 0vh;">
-					<img style="width:100%;height: 100%;" src="{{ url_for('static', filename ='img/xometry.jpg') }}" alt="logo">
+				<div class="col-7 projectCoverContainer" >
+					<img style="max-width: 100%; position: relative; top: 50%; transform: translateY(-50%);" src="{{ url_for('static', filename ='img/ibm3.png') }}" alt="logo">
 				</div>
 				<div class="text col-4 full">
 					<div class="row">
-						<h3> Internship at Xometry </h3>
+						<h3> Software Internship at IBM // Summer 2018 </h3>
 						<p>
-						In which I implemented deep learning to create clusters of CAD models based
-						on shape distribution and thumbnail images and created a web crawler to update prices of blank parts in server database
-						using data from mainstream material suppliers.
+						During my internship, one of the projects my team and I worked on was designing and implementing a data visualization interface to allow better understanding of win-rates among IBM digital products. Additionally, we incorporated predictive analysis using IBM Watson based on various key performance metrics using data retrieved from DB2 and filtered using SQL.
+
 						</p>
 						<div class="row" style="padding: 10px;">
 			            	<div class="tool">Python</div>
-			            	<div class="tool">scikit-learn</div>
-			            	<div class="tool">jupyter-notebook</div>
-			            	<div class="tool">MongoDB</div>
-			            	<div class="tool">AWS</div>
-			            	<div class="tool">Deep Learning</div>
+			            	<div class="tool">ReactJS</div>
+			            	<div class="tool">D3</div>
+			            	<div class="tool">NodeJS</div>
+			            	<div class="tool">Flask</div>
+			            	<div class="tool">Watson Machine Learning Services</div>
 			            </div>
 					</div>
 				</div>
@@ -142,7 +141,7 @@
 
 			<div class="row smlscrn" style="background-color: rgba(255,255,255,0.8); border-top: solid 4px white;">
 				<div class="col-7" style="overflow:hidden;padding-right:0px; padding-left:0px;padding-top: 0vh;">
-					<img style="width:100%;height: 100%;" src="{{ url_for('static', filename ='img/website.png') }}" alt="logo">
+					<img style="width:100%;" src="{{ url_for('static', filename ='img/website.png') }}" alt="logo">
 				</div>
 				<div class="text col-4 full">
 					<div class="row">
